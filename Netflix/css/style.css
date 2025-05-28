@@ -1,0 +1,580 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.container {
+  max-width: 2000px;
+}
+
+.container .banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://www.clarin.com/2023/06/27/eT3pjCwzO_2000x1500__1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 60px;
+}
+
+.container header h1 {
+  color: red;
+  font-size: 28px;
+}
+
+.container .banner header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 20px;
+}
+
+.container header .header_links {
+  padding-right: 10px;
+}
+
+.container ul li {
+  list-style: none;
+}
+
+.container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  background-color: red;
+  padding: 6px 8px;
+  border-radius: 3px solid red;
+}
+
+.container .header_links .lenguages-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: auto;
+}
+
+.container .header_links .iniciar-btn:hover {
+  background-color: #ec0404;
+}
+
+.container .header_links span {
+  display: none;
+}
+
+.header_links .lenguages-btn .img-btn2 {
+  width: 10px;
+  margin-bottom: -3px;
+}
+
+.container .hero {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  text-align: center;
+  padding: 0 30px 0 30px;
+  min-height: 350px;
+  width: 100%;
+}
+
+.container .hero .hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.container .hero input {
+  height: 50px;
+  width: 320px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.container .hero button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container .hero input::placeholder {
+  color: white;
+}
+
+.container .hero button {
+  background-color: red;
+  height: 50px;
+  color: white;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container .hero button:hover {
+  background-color: #ec0404;
+}
+
+.container .second-part {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 40px 0 40px;
+}
+
+.container .section1 .trends {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.second-part .section1 .trends-button1,
+.trends-button2 {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px;
+  background: #0f0f0f;
+}
+
+.second-part .section1 .cards {
+  display: flex;
+  justify-content: space-between;
+  min-height: 200px;
+  gap: 5px;
+}
+
+.second-part .section1 .cards .movies {
+  height: 100px;
+}
+
+.second-part .section1 .cards .movies:nth-child(3),
+.movies:nth-child(4),
+.movies:nth-child(5) {
+  display: none;
+}
+
+.second-part .cards img {
+  min-height: 200px;
+  width: 140px;
+  border-radius: 5px;
+}
+
+.second-part .cards .movie-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  height: 150px;
+  width: 30px;
+  border-radius: 10px;
+  align-self: center;
+  justify-self: center;
+}
+
+.second-part .section2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.second-part .section2 h2 {
+  font-size: 20px;
+}
+
+.second-part .section2 .section-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 30px;
+  min-height: 190px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(26, 32, 61, 1),
+    rgb(32, 15, 27)
+  );
+}
+
+.second-part .section2 .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.second-part .section3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.second-part .section3 button {
+  display: flex;
+  align-items: flex-end;
+  background-color: #2d2d2d;
+  padding: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.second-part .section3 button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-part .section3 .plus-btm {
+  width: 30px;
+  height: 30px;
+}
+
+.second-part .only {
+  font-size: 1rem;
+}
+
+.second-part .footer-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.second-part footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.second-part .footer-buttons input {
+  height: 50px;
+  width: 320px;
+  background-color: rgb(15, 15, 15, 1);
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.second-part .footer-buttons .footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: red;
+  height: 50px;
+  color: white;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.second-part .footer-buttons .footer-button:hover {
+  background-color: #ec0404;
+}
+
+.second-part footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 90px;
+}
+
+.second-part footer span {
+  font-size: 15px;
+  color: rgb(255 255 255 / 70%);
+}
+
+.second-part footer strong {
+  text-decoration: underline;
+}
+
+.second-part footer ul li {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255 255 255 / 70%);
+}
+
+.second-part footer ul li a {
+  font-size: 13px;
+  background-color: black;
+  text-decoration: underline;
+  color: rgb(255 255 255 / 70%);
+  display: inline-block;
+}
+
+.second-part footer button {
+  background-color: transparent;
+  height: 40px;
+  color: white;
+  width: 150px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.second-part footer .last-btn {
+  color: white;
+}
+
+.second-part footer p {
+  font-size: 14px;
+  color: rgb(255 255 255 / 70%);
+}
+
+/*responsive for tablet*/
+
+@media (min-width: 680px) {
+  .container .header_links span {
+    display: inline;
+  }
+
+  .container .hero {
+    padding: 20px 120px;
+    font-weight: 700;
+  }
+
+  .container .hero .hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .second-part .section1 .cards .movies:nth-child(3),
+  .movies:nth-child(4) {
+    display: inline-block;
+  }
+
+  .second-part .section1 .cards .movies:nth-child(3) {
+    display: inline-block;
+  }
+
+  .second-part .section3 button {
+    font-size: 17px;
+  }
+
+  .second-part .footer-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .second-part .footer-buttons input {
+    width: 80%;
+    height: 70px;
+  }
+
+  .second-part .footer-buttons .footer-button {
+    height: 70px;
+    width: 30%;
+    font-weight: 900;
+  }
+
+  .second-part footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  .container .img-btn2 {
+    width: 10px;
+    margin-bottom: -3px;
+  }
+
+  .container .last-btn .img-btn2 {
+    width: 10px;
+    margin-bottom: -3px;
+  }
+}
+
+/* Responsive for desktop*/
+
+@media (min-width: 1480px) {
+  .container .banner {
+    height: 90vh;
+  }
+
+  .container .banner header {
+    display: flex;
+    justify-content: space-around;
+    gap: 600px;
+    align-items: center;
+    height: 75px;
+    padding: 20px;
+  }
+
+  .container header h1 {
+    color: red;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .container .hero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    min-height: 100%;
+    width: 50%;
+    margin: auto;
+  }
+
+  .container .hero h1 {
+    font-size: 55px;
+    font-weight: 900;
+  }
+
+  .container .hero .p1 {
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .container .hero .p {
+    font-weight: 900;
+  }
+
+  .container .hero input {
+    height: 55px;
+    width: 500px;
+    font-size: 20px;
+  }
+
+  .container .hero button {
+    background-color: red;
+    height: 55px;
+    width: 200px;
+  }
+
+  .container .second-part {
+    margin: 0 150px;
+  }
+
+  .second-part .section1 .trends-buttons {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 25px;
+  }
+
+  .second-part .section1 .trends-button1 {
+    width: 200px;
+  }
+
+  .second-part .section1 .trends-button2 {
+    width: 130px;
+  }
+
+  .second-part .section1 .cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .second-part .section1 .cards .movies {
+    height: 100px;
+    cursor: pointer;
+  }
+
+  .second-part .section1 .cards .movies:nth-child(3),
+  .movies:nth-child(4),
+  .movies:nth-child(5) {
+    display: inline-block;
+  }
+
+  .second-part .cards img {
+    height: 500px;
+    width: 250px;
+    border-radius: 5px;
+    padding-bottom: 150px;
+  }
+
+  .second-part .cards img:hover {
+    height: 520px;
+    width: 270px;
+    transition: 0.4s;
+  }
+
+  .second-part .cards .movie-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    height: 150px;
+    width: 30px;
+    border-radius: 10px;
+    position: absolute;
+    right: 110px;
+    bottom: -400px;
+    cursor: pointer;
+  }
+
+  .second-part .cards .movie-row:hover {
+    background-color: rgb(73, 72, 72);
+    transition: 1.1s;
+  }
+
+  .second-part .section2 h2 {
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 150px;
+  }
+
+  .second-part .section2 .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border-radius: 5px;
+    font-size: 150px;
+  }
+
+  .second-part .section2 .section-cards {
+    height: 300px;
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .second-part .section3 button {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .second-part .section3 button:hover {
+    background-color: rgb(73, 72, 72);
+    transition: 1.1s;
+  }
+
+  .second-part .only {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .second-part .footer-buttons {
+    width: 850px;
+    margin: auto;
+  }
+
+  .second-part footer {
+    margin-top: 50px;
+  }
+}
